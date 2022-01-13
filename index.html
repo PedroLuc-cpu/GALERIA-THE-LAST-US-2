@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gamesUP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: rgba(0, 0, 0, 0.801);
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .conteiner{
+            grid-auto-flow: dense;
+            display: grid;
+            grid-template-areas:
+            'logo logo logo'
+            'main main main'
+            'footer footer footer';
+        }
+        header{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-area: logo;
+            margin: 30px;
+        }
+
+        .navag{
+            grid-column: 4/4;
+            /* display: flex; */
+        }
+
+        .navag>ul{
+            display: flex;
+            margin-right: 50px;
+        }
+        .navag>ul li+li{
+            margin-left: 30px;
+        }
+
+        .navag>ul li, a{
+            text-decoration: none;
+            list-style: none;
+            color: white;
+            font-size: 1.1em;
+            font-family: 'Vollkorn', serif;
+        }
+
+        .navag>ul li, a:hover{
+            color: rgb(194, 194, 194);
+            transition: .2s;
+        }
+
+
+        .main{
+            grid-area: main;
+        }
+
+        .main>section{
+            grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+            display: grid;
+            row-gap: 20px;
+            justify-items: center;
+            
+        }
+        .main>section>img{
+            box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.322);
+        }
+       
+       
+        .footer{
+            grid-area: footer;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <header>
+            <nav class="navag">
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">FALE CONOSCO</a></li>
+                    <li><a href="">FALE AQUI</a></li>
+                </ul>
+            </nav>
+        </header>
+                    <main class="main">
+                        <section>
+
+                            <img src="tls2/1043984.png" alt="">
+                            <img src="tls2/776862.png" alt="">
+                            <img src="tls2/776864.png" alt="">
+                            <img src="tls2/777105.png" alt="">
+                            <img src="tls2/777426.png" alt="">
+                            <img src="tls2/783255.png" alt="">
+                            <img src="tls2/788048.png" alt="">
+                            <img src="tls2/788052.png" alt="">
+                            <img src="tls2/863705.png" alt="">
+                            <img src="tls2/927191.png" alt="">
+                            
+                        </section>
+                    </main>
+            <footer class="footer">
+                <nav>
+                    <ul>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                    </ul>
+                </nav>
+            </footer>
+    </div>
+</body>
+</html>
